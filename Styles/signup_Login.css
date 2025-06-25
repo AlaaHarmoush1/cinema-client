@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, .main-section, .form-section {
+    display: flex;
+}
+
+body {
+    background-color: #f0f0f0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.main-section {
+    background-color: white;
+    width: 65%;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.color-section, .form-section {
+    width: 50%;
+}
+
+.color-section {
+    background: linear-gradient(135deg, #d60000, #ff4d4d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+}
+
+.form-section {
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    color: black;
+    margin-bottom: 30px;
+    font-size: 2em;
+    text-align: center;
+}
+
+.input-seciton {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+label {
+    color: gray;
+    font-weight: 500;
+}
+
+input, .button, .social-button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input {
+    border: 1px solid lightgray;
+}
+
+.button {
+    padding: 3%;
+    background: linear-gradient(135deg, #d60000, #ff4d4d);
+    color: white;
+    border: none;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.sign-up-text, .login-section {
+    text-align: center;
+    color: grey;
+}
+
+.sign-up-text {
+    margin: 25px;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid lightgray;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.social-button i {
+    margin-right: 8px;
+    font-size: 1em;
+}
+
+.login-section {
+    margin: 5%;
+}
+
+.login-section a {
+    text-decoration: none;
+    color: #d60000;
+}
+
+
+
+/* Tablet Css */
+
+@media (max-width: 1024px) {
+    .main-section {
+        flex-direction: column;
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .color-section, .form-section {
+        width: 100%;
+    }
+
+    .color-section {
+        height: 100px;
+    }
+}
+
+
+/* Phone Css */
+
+@media (max-width: 480px) {
+    .social-buttons {
+        flex-direction: column;
+    }
+}
