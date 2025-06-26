@@ -30,7 +30,7 @@ document.getElementById("Signup").addEventListener('click', async (event)=> {
                 'Content-Type': 'application/json',
             }
         })
-        if (response.status === 200){
+        if (response.status == 200){
             window.location.href = "../index.html"
         }
     }catch(error){
