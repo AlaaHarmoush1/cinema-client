@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar-section {
+    background: linear-gradient(135deg, #d60000, #ff4d4d);
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    height: 20%;
+}
