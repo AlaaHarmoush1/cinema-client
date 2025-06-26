@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./Styles/signup_Login.css">
+    <title>cinema-city</title>
+    <link rel="stylesheet" href="../Styles/signup_Login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-   <div class="main-section">
+    <div class="main-section">
         <div class="color-section">
             CINIMA CITY
         </div>
         <div class="form-section">
             <form action="">
-                <h1>Login</h1>
+                <h1>Sign up</h1>
+                <div class="input-seciton" id="name-section">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
                 <div class="input-seciton" id="email-phone-section">
                     <label for="email-phone">Email or Phone Number</label>
                     <input type="text" id="email-phone" name="email-phone" placeholder="Enter your email or phone number" required>
@@ -24,10 +28,10 @@
                     <input type="password" id="password" name="password-section" placeholder="Enter your password" required>
                 </div>
                 
-                <button class="button" id="Login">Login</button>
+                <button class="button" id="Signup">Sign Up</button>
 
                 <div class="sign-up-text">
-                    <p>or Login with</p>
+                    <p>or sign up with</p>
                 </div>
 
                 <div class="social-buttons">
@@ -41,14 +45,14 @@
                     </button>
                 </div>
                 <div class="login-section">
-                    Dont have an account? <a href="./Pages/sign_up.html">Sign Up</a>
+                    Already have an account? <a href="../index.html">Log in</a>
                 </div>
             </form>
         </div>
     </div>
 
-    
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="./Scripts/login.js"></script>
+    <script src="../Scripts/sign_up.js"></script>
 </body>
 </html>
