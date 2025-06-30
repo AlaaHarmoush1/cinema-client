@@ -19,7 +19,7 @@ document.getElementById("Signup").addEventListener('click', async (event)=> {
     }
 
     try {
-        const response = await axios.post('http://localhost/Cinema-server/controllers/auth_controller.php', {
+        const response = await axios.post('http://localhost/Backend/cinema-server/controllers/auth_controller.php', {
             name: name,
             email: email,
             password: password,

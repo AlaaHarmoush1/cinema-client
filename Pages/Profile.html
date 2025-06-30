@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Styles/Navbar.css">
+    <link rel="stylesheet" href="../Styles/Profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar-section">
+        <div class="logo-section">
+            <img src="../assets/images/Logo-removebg.png" alt="Cinema City Logo" class="Logo">
+        </div>
+        <div class="pages-section">
+            <a href="Home.html" class="page ">Home</a>
+            <a href="movies.html" class="page">Movies</a>
+            <a href="#" onclick="Logout()" class="page">Logout</a>
+            <a href="Profile.html"><i class="fas fa-user user-icon active"></i></a>
+
+
+        </div>
+
+
+        <!-- Mobile menu -->
+
+        <div class="Mobile-menu-button" id="humberger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="mobile-menu-section" id="mobile-menu-section">
+            <a href="Home.html" class="page ">Home</a>
+            <a href="movies.html" class="page ">Movies</a>
+            <a href="Profile.html" class="page active">Profile</a>
+            <a href="#" onclick="Logout()" class="page">Logout</a>
+        </div>
+    </nav>
+
+    <h1 class="greetings" id="greetings"></h1>
+    <p class="greetings">DISCLAIMER: IF YOU CHANGE SOMETHING IN YOUR INFO YOU WILL AUTOMATICALLY LOGOUT</p>
+
+    <div class="user-profile-section">
+        <div class="avatar-section">
+            <img src="../assets/images/Avatar-man.jpeg" alt="" class="avatar" id="avatar">
+            <span>Gender</span>
+            <label><input type="radio" name="gender" disabled value="male" id="Male" onclick="changeIcon()"> Male</label>
+            <label><input type="radio" name="gender" value="female" disabled id="Female"> Female</label>
+        </div>
+
+        <div class="form-section">
+            <h2>Personal Info</h2>
+
+            <label class="label"><h3>Name</h3></label>
+            <input type="text" id="name" class="inputs" disabled>
+
+            <label class="label"><h3>Email</h3></label>
+            <input type="text" id="email" class="inputs" disabled>
+
+            <label class="label"><h3>Phone Number</h3></label>
+            <input type="text" id="phone" class="inputs" disabled>
+
+            <label class="label"><h3>Password</h3></label>
+            <input type="password" id="password" class="inputs" placeholder="*******" disabled>
+
+            <label class="label"><h3>Favorite Genre</h3></label>
+            <select id="genre" disabled>
+                <option value="" disabled selected>Select a genre</option>
+                <option value="action">Action</option>
+                <option value="comedy">Comedy</option>
+                <option value="drama">Drama</option>
+                <option value="horror">Horror</option>
+                <option value="romance">Romance</option>
+                <option value="sci-fi">Sci-Fi</option>
+            </select>
+
+            <div class="contact-section">
+                <span>Preferred Contact Method</span><br>
+                <label><input type="radio" name="contact" value="email" id="emailM" disabled> Email</label>
+                <label><input type="radio" name="contact" value="phone" id="PhoneM" disabled> Phone</label>
+            </div>
+
+            <div class="buttons-section">
+                <button id="Enable" class="button" >Enable</button>
+                <button id="update" class="button" >Update</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cards-section">
+        
+
+        <div class="card">
+            <h4>Age Status</h4>
+            <p>Not Verified</p>
+        </div>
+
+        <div class="card">
+            <h4>Weekly Booking Subscription</h4>
+            <p>Not Subscribed</p>
+        </div>
+    </div>
+
+
+    <script src="../Scripts/Profile.js"></script>
+    <script src="../Scripts/navbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</body>
+</html>
