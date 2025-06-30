@@ -15,8 +15,10 @@
         <div class="pages-section">
             <a href="Home.html" class="page ">Home</a>
             <a href="movies.html" class="page active">Movies</a>
-            <a href="#" class="page">About</a>
-            <a href="#"><i class="fas fa-user user-icon"></i></a>
+            <a href="#" onclick="Logout()" class="page">Logout</a>
+            <a href="Profile.html"><i class="fas fa-user user-icon "></i></a>
+
+
         </div>
 
 
@@ -29,16 +31,23 @@
         <div class="mobile-menu-section" id="mobile-menu-section">
             <a href="Home.html" class="page ">Home</a>
             <a href="movies.html" class="page active">Movies</a>
-            <a href="#" class="page">About</a>
-            <a href="#" class="page">Profile</a>
+            <a href="Profile.html" class="page">Profile</a>
+            <a href="#" onclick="Logout()" class="page">Logout</a>
         </div>
     </nav>
+
+    <!-- https://www.youtube.com/embed/TcMBFSGVi1c -->
+
+    <iframe width="1028" height="578" src="" title="Marvel Studios&#39; Avengers: Endgame - Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 
 
 
     <script src="../Scripts/navbar.js"></script>
+    <script src="../Scripts/movies.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
 
 </body>
 </html>
