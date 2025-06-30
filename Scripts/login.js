@@ -36,8 +36,8 @@ document.getElementById('Login').addEventListener('click', async(event) => {
 
         localStorage.setItem('user_id', response.data.user_data.id)
         localStorage.setItem('name', response.data.user_data.name)
+        localStorage.setItem('isLoggedIn', true)
         window.location.href = "../Pages/Home.html"
-        console.log(response)
     }else{
         alert('Invalid Email or Password')
     }

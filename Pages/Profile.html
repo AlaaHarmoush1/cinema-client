@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../Styles/Navbar.css">
+    <link rel="stylesheet" href="../Styles/profile.css">
+</head>
+<body>
+    <!-- Navbar section -->
+    
+    <nav class="navbar-section">
+        <div class="logo-section">
+            <img src="../assets/images/Logo-removebg.png" alt="Cinema City Logo" class="Logo">
+        </div>
+        <div class="pages-section">
+            <a href="Home.html" class="page">Home</a>
+            <a href="movies.html" class="page">Movies</a>
+            <a href="Profile.html"><i class="fas fa-user user-icon active"></i></a>
+        </div>
+        <div class="Mobile-menu-button" id="humberger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="mobile-menu-section" id="mobile-menu-section">
+            <a href="Home.html" class="page ">Home</a>
+            <a href="movies.html" class="page">Movies</a>
+            <a href="Profile.html" class="page active">Profile</a>
+        </div>
+    </nav>
+
+    <!-- end of navbar section  -->
+
+    <div class="Header-section">
+        <h1 id="greetings"></h1>
+    </div>
+
+
+    <div class="form-section">
+        <form action="">
+            <div class="form-layer">
+                <div class="form-section">
+                    <label for="Name">Name</label>
+                    <input type="text" name="Name" id="name" disabled>
+                </div>
+                <div class="form-section">
+                    <label for="Email">Email</label>
+                    <input type="text" name="Email" id="email" disabled>
+                </div>
+            </div>
+            <div class="form-layer">
+                <div class="form-section">
+                    <label for="Number">Phone Number</label>
+                    <input type="Number" name="Number" id="Phone_Number" disabled>
+                </div>
+                <div class="form-section">
+                    <label for="Password">Password</label>
+                    <input type="Password" name="Password" id="Password" placeholder="********" disabled>
+                </div>
+            </div>
+            <div class="form-layer">
+                <div class="form-section">
+                    <label for="PCM">Prefered contact method</label>
+                    <select name="" id="PCF" disabled>
+                        <option value="Email">Email</option>
+                        <option value="Phone_Number">Phone Number</option>
+
+                    </select>
+                </div>
+                <div class="form-section">
+                    <label for="Genres">Genres</label>
+                    <select name="" id="Genres" disabled>
+                        <option value="horror">Horror</option>
+                        <option value="comedy">comedy</option>
+                        <option value="Action">Action</option>
+                        <option value="Romance">Romance</option>
+                    </select>
+                    <span class=""></span>
+                    
+                </div>
+            </div>
+
+            <div id="enable-update" class="enable-update">Change Details</div>
+            <div id="update" class="update">update</div>
+        </form>
+    </div>
+
+
+
+
+
+    <script src="../Scripts/navbar.js"></script>
+    <script src="../Scripts/Profile.js"></script>
+
+</body>
+</html>
