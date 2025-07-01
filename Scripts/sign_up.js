@@ -19,7 +19,7 @@ document.getElementById("Signup").addEventListener('click', async (event)=> {
     }
 
     try {
-        const response = await axios.post('http://localhost/Backend/cinema-server/controllers/auth_controller.php', {
+        const response = await axios.post('http://localhost/cinema-server/controllers/auth_controller.php', {
             name: name,
             email: email,
             password: password,
@@ -38,3 +38,12 @@ document.getElementById("Signup").addEventListener('click', async (event)=> {
     }
 })
 
+
+
+const isLoggedIn = localStorage.getItem('isLoggedIn')
+
+window.addEventListener('DOMContentLoaded', () => {
+    if(isLoggedIn == 'true'){
+    window.location.href = "http://127.0.0.1:5500/Pages/Home.html"
+}
+})

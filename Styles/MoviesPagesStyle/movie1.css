@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.spaces-section {
+    height: 50px;
+    background-color: red;
+}
+
+.info-and-seats-section{
+    width: 100%;
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+}
+
+.info-section {
+    width: 50%;
+}

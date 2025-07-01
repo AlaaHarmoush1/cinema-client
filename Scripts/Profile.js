@@ -79,7 +79,7 @@ updateButton.addEventListener('click', async () => {
     try {
         const user_id = localStorage.getItem('user_id');
 
-        const response = await axios.post('http://localhost/Backend/cinema-server/controllers/update_user.php', {
+        const response = await axios.post('http://localhost/cinema-server/controllers/update_user.php', {
             id: user_id,
             data: filtered_User_data
         }, {
@@ -89,7 +89,7 @@ updateButton.addEventListener('click', async () => {
         });
 
         if (response.status === 200) {
-            window.location.href = "http://127.0.0.1:5500/Fontend/cinema-client/index.html";
+            window.location.href = "http://127.0.0.1:5500/index.html";
         }
     } catch (error) {
         alert("Error: " + error);
