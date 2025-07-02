@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', async ()=> {
             <div class="movie-card" >
                 <img src="${movie.poster_url}" alt="${movie.title}" width="100%" height="100%">
                 <h1 class="movie-title">${movie.title} </h1>
-                 <button onclick="Book(${movie.id} , ${movie.title}, ${movie.trailor_url})">Book now</button>
+                 <button onclick="Book(${movie.id})">Book now</button>
             </div>`
             }
     }catch(error){
@@ -20,9 +20,7 @@ window.addEventListener('DOMContentLoaded', async ()=> {
 })
 
 
-function Book(id, title, trailor){
+function Book(id){
     localStorage.setItem('movie_id', id)
-    localStorage.setItem('movie_title', title)
-    localStorage.setItem('movie_trailor', trailor)
     window.location.href = `../Pages/MoviePages/movie${id}.html`
 }

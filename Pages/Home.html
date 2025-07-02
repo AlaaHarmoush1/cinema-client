@@ -6,6 +6,7 @@
     <title>Cinema City</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="../Styles/Navbar.css">
+    <link rel="stylesheet" href="../Styles/home.css">
 </head>
 <body>
     <nav class="navbar-section">
@@ -35,7 +36,31 @@
             <a href="#" onclick="Logout()" class="page">Logout</a>
         </div>
     </nav>
+    <div class="hero">
+        <img src="../assets/images/hero.jpg" width="100%" class="hero">
+    </div>
 
+    <div>
+        <div><h1>TOP Genres</h1></div>
+        <div class="genre-section">
+            <div class="Action" id="Action">
+                <h1>Action</h1>
+                <div class="Action-movies movies" id="Action-movies"></div>
+            </div>
+            <div class="Family" id="Family">
+                <h1>Family</h1>
+                <div class="Family-movies movies" id="Family-movies"></div>
+            </div>
+            <div class="Drama" id="Drama">
+                <h1>Drama</h1>
+                <div class="Drama-movies movies" id="Drama-movies"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../Scripts/home.js"></script>
     <script src="../Scripts/navbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
 </body>
 </html>

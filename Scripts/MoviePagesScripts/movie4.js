@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', async () => {
 
         document.getElementById('movie-info').innerHTML = `
         <div class="trailor-section">
-        <iframe width="1901" height="708" src="${movie.trailer_url}" title="How to Dominate Every Game as Gloo (Even with Dark System Teammates)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="100%" height="708" src="${movie.trailer_url}" title="How to Dominate Every Game as Gloo (Even with Dark System Teammates)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <div class="spaces-section">
         </div>

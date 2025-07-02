@@ -3,6 +3,13 @@
     margin: 0;
 }
 
+.main-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 .spaces-section {
     height: 50px;
@@ -11,11 +18,74 @@
 
 .info-and-seats-section{
     width: 100%;
-    background-color: yellow;
     display: flex;
     flex-direction: row;
 }
 
-.info-section {
-    width: 50%;
+
+.info-and-seats-section {
+    display: flex;
+    flex-direction: row;
+}
+
+table{
+    /* border-collapse: collapse; */
+    /* width: 50%;
+    height: 200px; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+table td{
+    border: 1px solid black;
+    height: 3rem;
+    width: 3rem;
+}
+
+table td button {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.available-seets {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin: 20px;
+    color: white;
+    
+}
+
+
+.red {
+    background-color: red;
+}
+
+.green{
+    background-color: green;
+}
+
+.screen {
+    width: 25%;
+    background-color: black;
+    height: 100px;
+    margin-left: 35%;
+    color: white;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.book {
+    border: none;
+    background-color: green;
+    height: 2rem;
+    width: 7rem;
+    margin: 20px;
 }
