@@ -3,8 +3,8 @@ const movies_section = document.getElementById('movies-section')
 
 window.addEventListener('DOMContentLoaded', async ()=> {
     try {
-        const response  = await axios.get("http://localhost/cinema-server/controllers/get_movies.php")
-        const movies = response.data.Movies;
+        const response  = await axios.get(`${BASE_URL}/Movies`)
+        const movies = response.data.payload;
 
         for(let movie of movies){
             movies_section.innerHTML +=  `

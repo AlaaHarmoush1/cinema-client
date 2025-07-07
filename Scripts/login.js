@@ -21,7 +21,7 @@ document.getElementById('Login').addEventListener('click', async(event) => {
     }
 
     try{
-        const response = await axios.post('http://localhost/cinema-server/controllers/Login_controller.php',{
+        const response = await axios.post(`${BASE_URL}/Login`,{
         email: email,
         password: password,
         phone_number: phone
@@ -34,10 +34,12 @@ document.getElementById('Login').addEventListener('click', async(event) => {
 
     if (response.status === 200){
 
-        localStorage.setItem('user_id', response.data.user_data.id)
-        localStorage.setItem('name', response.data.user_data.name)
+        console.log(response.data)
+
+        localStorage.setItem('user_id', response.data.payload.user_data.id)
+        localStorage.setItem('name', response.data.payload.user_data.name)
         localStorage.setItem('isLoggedIn', true)
-        window.location.href = "http://127.0.0.1:5500/Pages/Profile.html"
+        window.location.href = "http://127.0.0.1:5501/Pages/Profile.html"
         console.log(response)
     }else{
         alert('Invalid Email or Password')
@@ -53,6 +55,6 @@ const isLoggedIn = localStorage.getItem('isLoggedIn')
 
 window.addEventListener('DOMContentLoaded', () => {
     if(isLoggedIn == 'true'){
-    window.location.href = "http://127.0.0.1:5500/Pages/Home.html"
+    window.location.href = "http://127.0.0.1:5501/Pages/Home.html"
 }
 })
